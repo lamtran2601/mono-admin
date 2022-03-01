@@ -1,6 +1,6 @@
 import "antd/dist/antd.css";
-import { HasuraProvider } from "./hooks/hasura-provider";
-import { Main } from "./pages/main/Main";
+import { Main } from "pages/main/Main";
+import { HasuraProvider } from "hooks/HasuraProvider";
 
 function App() {
   return (

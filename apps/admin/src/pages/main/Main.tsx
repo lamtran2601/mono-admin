@@ -1,13 +1,16 @@
 import { Row, Col } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import { Header } from "./components/Header";
-import { Sider } from "./components/Sider";
-import { CustomBreadcrumb } from "./components/Breadcrumb";
-import { Content } from "./components/Content";
+import { Header } from "./Header";
+import { Sider } from "./Sider";
+import { CustomBreadcrumb } from "./Breadcrumb";
+import { Content } from "./Content/Content";
+import { useDataProvider } from "hooks/DataProvider";
 
 export const Main = () => {
   const [collapsed, setCollapsed] = useState(false);
+  const dataProvider = useDataProvider();
+
   return (
     <>
       <Row>
