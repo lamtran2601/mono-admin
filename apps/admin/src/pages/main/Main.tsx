@@ -16,10 +16,15 @@ export const Main = () => {
       <Row>
         <Header
           className="header"
-          style={{ position: "fixed", zIndex: 1, width: "100%" }}
+          style={{
+            position: "fixed",
+            zIndex: 1,
+            width: "100%",
+            height: 55,
+          }}
         />
       </Row>
-      <Row style={{ marginTop: 64 }}>
+      <Row style={{ marginTop: 55 }}>
         <Col>
           <Sider
             style={{
@@ -27,7 +32,7 @@ export const Main = () => {
               overflow: "auto",
               position: "fixed",
               left: 0,
-              top: 50,
+              top: 55,
               bottom: 0,
             }}
           />
